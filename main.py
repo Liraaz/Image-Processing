@@ -48,14 +48,91 @@ class Face_Recognition_System:
 
         # student button
         img5=Image.open(r"C:\Users\HIMADRI\Desktop\Project\Images\College.jpg")#insert a image
-        img5=img5.resize((1600,900))#resize((530,130),Image.ANTIALIAS)
+        img5=img5.resize((220,220))#resize((530,130),Image.ANTIALIAS)
         self.photoimg5=ImageTk.PhotoImage(img5)
 
-        b1=Button(bg_img,image=self.photoimg5)
+        b1=Button(bg_img,image=self.photoimg5,cursor="hand2")
         b1.place(x=200,y=100,width=180,height=180)
 
+        b1_1=Button(bg_img,text="Student Details",font=("times new roman",14,"bold"),bg="dark blue",fg="white",cursor="hand2")
+        b1_1.place(x=200,y=280,width=180,height=40)
 
+        # detect face button
+        img6=Image.open(r"C:\Users\HIMADRI\Desktop\Project\Images\College.jpg")#insert a image
+        img6=img6.resize((220,220))#resize((530,130),Image.ANTIALIAS)
+        self.photoimg6=ImageTk.PhotoImage(img6)
 
+        b1=Button(bg_img,image=self.photoimg6,cursor="hand2")
+        b1.place(x=540,y=100,width=180,height=180)
+
+        b1_1=Button(bg_img,text="Face Detector",font=("times new roman",14,"bold"),bg="dark blue",fg="white",cursor="hand2")
+        b1_1.place(x=540,y=280,width=180,height=40)
+
+        # Attendance Face button
+        img7=Image.open(r"C:\Users\HIMADRI\Desktop\Project\Images\College.jpg")#insert a image
+        img7=img7.resize((220,220))#resize((530,130),Image.ANTIALIAS)
+        self.photoimg7=ImageTk.PhotoImage(img7)
+
+        b1=Button(bg_img,image=self.photoimg7,cursor="hand2")
+        b1.place(x=900,y=100,width=180,height=180)
+
+        b1_1=Button(bg_img,text="Attendance",font=("times new roman",14,"bold"),bg="dark blue",fg="white",cursor="hand2")
+        b1_1.place(x=900,y=280,width=180,height=40)
+
+        # help desk button
+        img8=Image.open(r"C:\Users\HIMADRI\Desktop\Project\Images\College.jpg")#insert a image
+        img8=img8.resize((220,220))#resize((530,130),Image.ANTIALIAS)
+        self.photoimg8=ImageTk.PhotoImage(img8)
+
+        b1=Button(bg_img,image=self.photoimg8,cursor="hand2")
+        b1.place(x=1260,y=100,width=180,height=180)
+
+        b1_1=Button(bg_img,text="Help Desk",font=("times new roman",14,"bold"),bg="dark blue",fg="white",cursor="hand2")
+        b1_1.place(x=1260,y=280,width=180,height=40)
+
+        # train data button
+        img9=Image.open(r"C:\Users\HIMADRI\Desktop\Project\Images\College.jpg")#insert a image
+        img9=img9.resize((220,220))#resize((530,130),Image.ANTIALIAS)
+        self.photoimg9=ImageTk.PhotoImage(img9)
+
+        b1=Button(bg_img,image=self.photoimg9,cursor="hand2")
+        b1.place(x=200,y=400,width=180,height=180)
+
+        b1_1=Button(bg_img,text="Train Data",font=("times new roman",14,"bold"),bg="dark blue",fg="white",cursor="hand2")
+        b1_1.place(x=200,y=580,width=180,height=40)
+
+        # Photos button
+        img10=Image.open(r"C:\Users\HIMADRI\Desktop\Project\Images\College.jpg")#insert a image
+        img10=img10.resize((220,220))#resize((530,130),Image.ANTIALIAS)
+        self.photoimg10=ImageTk.PhotoImage(img10)
+
+        b1=Button(bg_img,image=self.photoimg10,cursor="hand2")
+        b1.place(x=540,y=400,width=180,height=180)
+
+        b1_1=Button(bg_img,text="Photos",font=("times new roman",14,"bold"),bg="dark blue",fg="white",cursor="hand2")
+        b1_1.place(x=540,y=580,width=180,height=40)
+
+        # Developer button
+        img11=Image.open(r"C:\Users\HIMADRI\Desktop\Project\Images\College.jpg")#insert a image
+        img11=img11.resize((220,220))#resize((530,130),Image.ANTIALIAS)
+        self.photoimg11=ImageTk.PhotoImage(img11)
+
+        b1=Button(bg_img,image=self.photoimg11,cursor="hand2")
+        b1.place(x=900,y=400,width=180,height=180)
+
+        b1_1=Button(bg_img,text="Developer",font=("times new roman",14,"bold"),bg="dark blue",fg="white",cursor="hand2")
+        b1_1.place(x=900,y=580,width=180,height=40)
+
+        # Exit button
+        img12=Image.open(r"C:\Users\HIMADRI\Desktop\Project\Images\College.jpg")#insert a image
+        img12=img12.resize((220,220))#resize((530,130),Image.ANTIALIAS)
+        self.photoimg12=ImageTk.PhotoImage(img12)
+
+        b1=Button(bg_img,image=self.photoimg12,cursor="hand2")
+        b1.place(x=1260,y=400,width=180,height=180)
+
+        b1_1=Button(bg_img,text="Exit",font=("times new roman",14,"bold"),bg="dark blue",fg="white",cursor="hand2")
+        b1_1.place(x=1260,y=580,width=180,height=40)
 
 
 if __name__=="__main__":
