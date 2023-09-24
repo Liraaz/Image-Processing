@@ -58,7 +58,7 @@ class Face_Recognition_System:
         b1_1.place(x=200,y=280,width=180,height=40)
 
         # detect face button
-        img6=Image.open(r"C:\Users\HIMADRI\Desktop\Project\Images\College.jpg")#insert a image
+        img6=Image.open(r"C:\Users\HIMADRI\Desktop\Project\Images\face detect.jpeg")#insert a image
         img6=img6.resize((220,220))#resize((530,130),Image.ANTIALIAS)
         self.photoimg6=ImageTk.PhotoImage(img6)
 
@@ -102,7 +102,7 @@ class Face_Recognition_System:
         b1_1.place(x=200,y=580,width=180,height=40)
 
         # Photos button
-        img10=Image.open(r"C:\Users\HIMADRI\Desktop\Project\Images\College.jpg")#insert a image
+        img10=Image.open(r"C:\Users\HIMADRI\Desktop\Project\Images\images.jpeg")#insert a image
         img10=img10.resize((220,220))#resize((530,130),Image.ANTIALIAS)
         self.photoimg10=ImageTk.PhotoImage(img10)
 
