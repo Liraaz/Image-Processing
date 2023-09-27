@@ -35,7 +35,7 @@ class Face_Recognition_System:
 
 
         # bg image
-        img4=Image.open(r"C:\Users\Home\OneDrive\Desktop\major project\Image-Processing-Project-1\project-images\bg2.jpg")#insert a image
+        img4=Image.open(r"C:\Users\Home\OneDrive\Desktop\major project\Image-Processing-Project-1\project-images\bg6.webp")#insert a image
         img4=img4.resize((1600,900))#resize((530,130),Image.ANTIALIAS)
         self.photoimg4=ImageTk.PhotoImage(img4)
 
@@ -80,7 +80,7 @@ class Face_Recognition_System:
         b1_1.place(x=900,y=280,width=180,height=40)
 
         # help desk button
-        img8=Image.open(r"C:\Users\Home\OneDrive\Desktop\major project\Image-Processing-Project-1\project-images\12.jpg")#insert a image
+        img8=Image.open(r"C:\Users\Home\OneDrive\Desktop\major project\Image-Processing-Project-1\project-images\19.jpg")#insert a image
         img8=img8.resize((220,220))#resize((530,130),Image.ANTIALIAS)
         self.photoimg8=ImageTk.PhotoImage(img8)
 
