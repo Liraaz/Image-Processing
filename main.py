@@ -35,8 +35,8 @@ class Face_Recognition_System:
 
 
         # bg image
-        img4=Image.open(r"C:\Users\Home\OneDrive\Desktop\major project\Image-Processing-Project-1\project-images\bg6.webp")#insert a image
-        img4=img4.resize((1600,900))#resize((530,130),Image.ANTIALIAS)
+        img4=Image.open(r"C:\Users\Home\OneDrive\Desktop\major project\Image-Processing-Project-1\project-images\bg5.webp")#insert a image
+        img4=img4.resize((1700,900))#resize((530,130),Image.ANTIALIAS)
         self.photoimg4=ImageTk.PhotoImage(img4)
 
         bg_img=Label(self.root,image=self.photoimg4)
@@ -58,7 +58,7 @@ class Face_Recognition_System:
         b1_1.place(x=200,y=280,width=180,height=40)
 
         # detect face button
-        img6=Image.open(r"C:\Users\Home\OneDrive\Desktop\major project\Image-Processing-Project-1\project-images\th.jpg")#insert a image
+        img6=Image.open(r"C:\Users\Home\OneDrive\Desktop\major project\Image-Processing-Project-1\project-images\fd.png")#insert a image
         img6=img6.resize((220,220))#resize((530,130),Image.ANTIALIAS)
         self.photoimg6=ImageTk.PhotoImage(img6)
 
