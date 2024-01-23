@@ -104,13 +104,6 @@ class Student:
         class_student_frame=LabelFrame(Left_frame,bd=2,bg="white",relief=RIDGE,text="Class Student information")
         class_student_frame.place(x=10,y=265,width=750,height=330)
 
-#student ID
-       # studentID_label=Label(class_student_frame,text="Student ID:",font=("times new roman",12,"bold"),bg="white")
-        #studentID_label.grid(row=0,column=0,padx=10,sticky=W)
-
- #       studentID_entry=ttk.Entry(class_student_frame,width=25,font=("times new roman",12,"bold"))
-#        studentID_entry.grid(row=0,column=1,padx=10,sticky=W)
-
 #student name
 
         studentName_label=Label(class_student_frame,text="Student Name:",font=("times new roman",12,"bold"),bg="white")
@@ -118,14 +111,6 @@ class Student:
 
         studentName_entry=ttk.Entry(class_student_frame,width=25,font=("times new roman",12,"bold"))
         studentName_entry.grid(row=0,column=1,padx=10,pady=10,sticky=W)
-
-#class division
-        
-    #    class_div_label=Label(class_student_frame,text="Class Division:",font=("times new roman",12,"bold"),bg="white")
-     #   class_div_label.grid(row=1,column=0,padx=10,sticky=W)
-
-      #  class_div_entry=ttk.Entry(class_student_frame,width=25,font=("times new roman",12,"bold"))
-       # class_div_entry.grid(row=1,column=1,padx=10,pady=5,sticky=W)
 
 #roll no
         Roll_label=Label(class_student_frame,text="Roll:",font=("times new roman",12,"bold"),bg="white")
@@ -262,9 +247,8 @@ class Student:
         self.student_table.heading("course",text="Course")
         self.student_table.heading("year",text="Year")
         self.student_table.heading("sem",text="Semester")
-       # self.student_table.heading("id",text="Student ID")
+
         self.student_table.heading("name",text="Name")
-      #  self.student_table.heading("div",text="Division")
         self.student_table.heading("roll",text="Roll No")
         self.student_table.heading("gender",text="Gender")
         self.student_table.heading("dob",text="DOB")
