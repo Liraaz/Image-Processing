@@ -73,15 +73,6 @@ class Student:
         dep_combo.current(0)
         dep_combo.grid(row=0,column=1,padx=2,pady=10,sticky=W)
 
-#course
-        course_label=Label(current_course_frame,text="Course:",font=("times new roman",12,"bold"),bg="white")
-        course_label.grid(row=0,column=2,padx=10)
-
-        course_combo=ttk.Combobox(current_course_frame,font=("times new roman",12,"bold"),state="readonly",width=30)
-        course_combo["values"]=("Select Course","FE","SE","TE","BE")
-        course_combo.current(0)
-        course_combo.grid(row=0,column=3,padx=2,pady=10,sticky=W)
-
 #Year
         year_label=Label(current_course_frame,text="Year:",font=("times new roman",12,"bold"),bg="white")
         year_label.grid(row=1,column=0,padx=2)
@@ -93,12 +84,12 @@ class Student:
 
 #semester
         semester_label=Label(current_course_frame,text="Semester:",font=("times new roman",12,"bold"),bg="white")
-        semester_label.grid(row=1,column=2,padx=10)
+        semester_label.grid(row=0,column=2,padx=10)
 
         semester_combo=ttk.Combobox(current_course_frame,font=("times new roman",12,"bold"),state="readonly",width=30)
         semester_combo["values"]=("Select Semester","Semester-1","Semester-2","Semester-3","Semester-4","Semester-5","Semester-6")
         semester_combo.current(0)
-        semester_combo.grid(row=1,column=3,padx=2,pady=10,sticky=W)
+        semester_combo.grid(row=0,column=3,padx=2,pady=10,sticky=W)
         
 #class student information
         class_student_frame=LabelFrame(Left_frame,bd=2,bg="white",relief=RIDGE,text="Class Student information")
@@ -247,7 +238,6 @@ class Student:
         self.student_table.heading("course",text="Course")
         self.student_table.heading("year",text="Year")
         self.student_table.heading("sem",text="Semester")
-
         self.student_table.heading("name",text="Name")
         self.student_table.heading("roll",text="Roll No")
         self.student_table.heading("gender",text="Gender")
@@ -263,9 +253,7 @@ class Student:
         self.student_table.column("course",width=80)
         self.student_table.column("year",width=80)
         self.student_table.column("sem",width=80)
-      #  self.student_table.column("id",width=80)
         self.student_table.column("name",width=80)
-      #  self.student_table.column("div",width=80)
         self.student_table.column("roll",width=80)
         self.student_table.column("gender",width=80)
         self.student_table.column("dob",width=80)
