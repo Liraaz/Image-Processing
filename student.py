@@ -28,7 +28,7 @@ class Student:
 
 
          # 1st image
-                img1=Image.open(r"C:\Users\user\major project\Image-Processing-Project\project-images\1.jpg")#insert a image 
+                img1=Image.open(r"project-images\1.jpg")#insert a image 
                 img1=img1.resize((530,130))#resize((530,130),Image.ANTIALIAS)
                 self.photoimg1=ImageTk.PhotoImage(img1)
 
@@ -36,7 +36,7 @@ class Student:
                 f_lbl.place(x=0,y=0,width=535,height=130)
 
         # 2nd image
-                img2=Image.open(r"C:\Users\user\major project\Image-Processing-Project\project-images\3.jpg")#insert a image
+                img2=Image.open(r"project-images\3.jpg")#insert a image
                 img2=img2.resize((530,130))#resize((530,130),Image.ANTIALIAS)
                 self.photoimg2=ImageTk.PhotoImage(img2)
 
@@ -44,7 +44,7 @@ class Student:
                 f_lbl.place(x=535,y=0,width=535,height=130)        
 
         # 3rd image
-                img3=Image.open(r"C:\Users\user\major project\Image-Processing-Project\project-images\2.jpg")#insert a image
+                img3=Image.open(r"project-images\2.jpg")#insert a image
                 img3=img3.resize((530,130))#resize((530,130),Image.ANTIALIAS)
                 self.photoimg3=ImageTk.PhotoImage(img3)
 
@@ -52,7 +52,7 @@ class Student:
                 f_lbl.place(x=1070,y=0,width=535,height=130)   
 
         # bg image
-                img4=Image.open(r"C:\Users\user\major project\Image-Processing-Project\project-images\bg5.webp")#insert a image
+                img4=Image.open(r"project-images\bg5.webp")#insert a image
                 img4=img4.resize((1600,900))#resize((530,130),Image.ANTIALIAS)
                 self.photoimg4=ImageTk.PhotoImage(img4)
 
@@ -70,7 +70,7 @@ class Student:
                 Left_frame=LabelFrame(main_frame,bd=2,bg="white",relief=RIDGE,text="Student Details",font=("times new roman",12,"bold"))
                 Left_frame.place(x=10,y=10,width=770,height=630)
 
-                img_left=Image.open(r"C:\Users\user\major project\Image-Processing-Project\project-images\7.jpg")#insert a image
+                img_left=Image.open(r"project-images\7.jpg")#insert a image
                 img_left=img_left.resize((760,130))#resize((530,130),Image.ANTIALIAS)
                 self.photoimg_left=ImageTk.PhotoImage(img_left)
 
@@ -212,7 +212,7 @@ class Student:
                 Right_frame.place(x=780,y=10,width=780,height=630)
 
 
-                img_right=Image.open(r"C:\Users\user\major project\Image-Processing-Project\project-images\7.jpg")#insert a image
+                img_right=Image.open(r"project-images\7.jpg")#insert a image
                 img_right=img_right.resize((780,130))#resize((530,130),Image.ANTIALIAS)
                 self.photoimg_right=ImageTk.PhotoImage(img_right)
 
@@ -449,7 +449,7 @@ class Student:
                                                                                                                                                         self.var_phone.get(),
                                                                                                                                                         self.var_address.get(),
                                                                                                                                                         self.var_radio1.get(),
-                                                                                                                                                        self.var_std_id.get()==id+1
+                                                                                                                                                        self.var_std_id.get()
                                                                                                                                                 ))
                         conn.commit()
                         self.fetch_data()
