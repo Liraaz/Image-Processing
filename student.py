@@ -118,7 +118,7 @@ class Student:
                 studentID_label.grid(row=0,column=0,padx=10,sticky=W)
 
                 studentID_entry=ttk.Entry(class_student_frame,textvariable=self.var_std_id,width=25,font=("times new roman",12,"bold"))
-                studentID_entry.grid(row=0,column=1,padx=10,sticky=W)
+                studentID_entry.grid(row=0,column=1,padx=10,pady=10,sticky=W)
 
         #student name
 
@@ -457,8 +457,8 @@ class Student:
                         conn.close()
                         # load predifined data on face frontals from opencv
 
-
-                        face_classifier=cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
+# webcam 
+                        face_classifier=cv2.CascadeClassifier(r"C:\Program Files\Python312\Lib\site-packages\cv2\data\haarcascade_frontalface_default.xml")
 
                         def face_cropped(img):
                                gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
@@ -489,6 +489,7 @@ class Student:
                         messagebox.showinfo("Result","Generating data sets completed!!!")
                 except Exception as es:
                         messagebox.showerror("Error",f"Due To:{str(es)}",parent=self.root)
+                        
 
 if __name__=="__main__":
         root=Tk()
