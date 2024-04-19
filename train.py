@@ -24,7 +24,8 @@ class Train:
 
                 f_lbl=Label(self.root,image=self.photoimg_top)
                 f_lbl.place(x=0,y=55,width=1600,height=340)
-                # button
+                
+        # button
                 b1_1=Button(self.root,text="TRAIN DATA",command=self.train_classifier,font=("times new roman",30,"bold"),bg="white",fg="blue",cursor="hand2")
                 b1_1.place(x=0,y=400,width=1600,height=60)
 
